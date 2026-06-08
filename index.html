@@ -10,73 +10,147 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
     background:#0f172a;
-    color:#ffffff;
+    color:white;
     line-height:1.6;
 }
 
-header{
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    z-index:1000;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
     min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
+    padding:120px 20px 50px;
 }
 
-header h1{
+.profile-image{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    margin-bottom:25px;
+    box-shadow:0 0 25px rgba(56,189,248,0.4);
+}
+
+.hero h1{
     font-size:4rem;
 }
 
-header h2{
+.hero h2{
     color:#38bdf8;
-    margin:15px 0;
+    margin:10px 0;
 }
 
-header p{
+.hero p{
     max-width:800px;
     color:#cbd5e1;
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 section{
-    padding:60px 10%;
+    padding:80px 10%;
 }
 
 .section-title{
     color:#38bdf8;
-    margin-bottom:20px;
-    font-size:2rem;
+    margin-bottom:30px;
+    font-size:2.2rem;
 }
 
 .card{
     background:#1e293b;
     padding:25px;
-    border-radius:12px;
+    border-radius:15px;
     margin-bottom:20px;
 }
 
 .skills{
     display:flex;
     flex-wrap:wrap;
-    gap:10px;
+    gap:12px;
 }
 
 .skill{
     background:#334155;
-    padding:10px 15px;
-    border-radius:20px;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .project{
     background:#1e293b;
     padding:20px;
-    border-radius:12px;
-    margin-bottom:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:translateY(-5px);
 }
 
 .project h3{
@@ -89,178 +163,247 @@ ul{
 }
 
 footer{
-    text-align:center;
-    padding:20px;
     background:#020617;
-    margin-top:30px;
+    text-align:center;
+    padding:25px;
+}
+
+.contact p{
+    margin-bottom:10px;
 }
 
 a{
     color:#38bdf8;
-    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .profile-image{
+        width:180px;
+        height:180px;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
-<header>
+<nav>
+    <h2>Portfolio</h2>
 
-<h1>SRINITHI M</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<h2>Aspiring Analytics Professional</h2>
+<section class="hero">
 
-<p>
-Motivated and responsible PGDM student with a strong interest in Analytics, Business Intelligence, and Data-Driven Decision Making. Seeking opportunities to apply analytical thinking, gain practical exposure, and contribute to organizational growth through data-driven insights and problem-solving.
-</p>
+    <img src="Srinithi.jpeg" alt="Srinithi M" class="profile-image">
 
-</header>
+    <h1>SRINITHI M</h1>
 
-<section>
+    <h2>Aspiring Analytics Professional</h2>
 
-<h2 class="section-title">About Me</h2>
+    <p>
+        Motivated PGDM student with a strong interest in Data Analytics,
+        Business Analysis, and Data-Driven Decision Making. Passionate about
+        transforming data into actionable insights and contributing to
+        organizational growth through analytical thinking and problem-solving.
+    </p>
 
-<div class="card">
-
-<p>
-I am currently pursuing a Post Graduate Diploma in Management at Rajalakshmi School of Business. I have a keen interest in Analytics, Business Intelligence, and Data Analysis. I am passionate about learning industry practices, enhancing analytical capabilities, and leveraging data to support effective business decision-making.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">Education</h2>
-
-<div class="card">
-<h3>Post Graduate Diploma in Management</h3>
-<p>Rajalakshmi School of Business</p>
-<p>CGPA: 7.0 / 9</p>
-<p>2025 – 2027</p>
-</div>
-
-<div class="card">
-<h3>B.E Electrical and Electronics Engineering</h3>
-<p>K. Ramakrishnan College of Engineering</p>
-<p>CGPA: 7.79 / 10</p>
-<p>2021 – 2025</p>
-</div>
-
-<div class="card">
-<h3>Higher Secondary</h3>
-<p>SRV Matric Higher Secondary School</p>
-<p>86.76%</p>
-</div>
-
-<div class="card">
-<h3>Senior Secondary</h3>
-<p>Laurel Higher Secondary School</p>
-<p>86%</p>
-</div>
+    <a href="Srinithi Resume.pdf" target="_blank" class="btn">
+        Download Resume
+    </a>
 
 </section>
 
-<section>
+<section id="about">
 
-<h2 class="section-title">Skills</h2>
+    <h2 class="section-title">About Me</h2>
 
-<div class="skills">
+    <div class="card">
 
-<div class="skill">Business Analysis</div>
-<div class="skill">Analytics</div>
-<div class="skill">Microsoft Excel</div>
-<div class="skill">Microsoft Word</div>
-<div class="skill">Microsoft PowerPoint</div>
-<div class="skill">Basic Python</div>
-<div class="skill">Project Management</div>
-<div class="skill">Strategic Planning</div>
-<div class="skill">Presentation Skills</div>
-<div class="skill">Teamwork</div>
-<div class="skill">Adaptability</div>
-<div class="skill">Internet of Things</div>
+        <p>
+            I am currently pursuing a Post Graduate Diploma in Management at
+            Rajalakshmi School of Business. I am passionate about Analytics,
+            Business Intelligence, HR Analytics, and Business Analysis.
+            My goal is to leverage data, technology, and strategic thinking
+            to solve business challenges and support informed decision-making.
+        </p>
 
-</div>
+    </div>
 
 </section>
 
-<section>
+<section id="education">
 
-<h2 class="section-title">Academic Projects</h2>
+    <h2 class="section-title">Education</h2>
 
-<div class="project">
+    <div class="card">
+        <h3>Post Graduate Diploma in Management (PGDM)</h3>
+        <p>Rajalakshmi School of Business</p>
+        <p>CGPA: 7.0 / 9</p>
+        <p>2025 – 2027</p>
+    </div>
 
-<h3>Automatic Wall Painting Robot</h3>
+    <div class="card">
+        <h3>B.E Electrical and Electronics Engineering</h3>
+        <p>K. Ramakrishnan College of Engineering</p>
+        <p>CGPA: 7.79 / 10</p>
+        <p>2021 – 2025</p>
+    </div>
 
-<p>
-Developed a remote-controlled robotic system designed to perform automated wall painting with uniform coverage and minimal human intervention.
-</p>
+    <div class="card">
+        <h3>Higher Secondary</h3>
+        <p>SRV Matric Higher Secondary School</p>
+        <p>86.76%</p>
+    </div>
 
-</div>
-
-<div class="project">
-
-<h3>Automatic Opening Garage Door System</h3>
-
-<p>
-Designed an IoT-based garage door system that enables hands-free and sensor-based automatic operation.
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>ECOGUARD – Smart Detector for Harmful Chemicals in Beverages and Vegetables</h3>
-
-<p>
-Developed an IoT-based detection system capable of identifying harmful chemicals in food items and providing real-time alerts.
-</p>
-
-</div>
+    <div class="card">
+        <h3>Senior Secondary</h3>
+        <p>Laurel Higher Secondary School</p>
+        <p>86%</p>
+    </div>
 
 </section>
 
-<section>
+<section id="skills">
 
-<h2 class="section-title">Certifications</h2>
+    <h2 class="section-title">Skills</h2>
 
-<div class="card">
+    <div class="skills">
 
-<ul>
-<li>Google Cloud Career Readiness – Associate Cloud Engineer Track</li>
-<li>Salesforce Administrator Virtual Internship</li>
-<li>Introduction on Intellectual Property to Engineers and Technologists (NPTEL)</li>
-<li>Internet of Things</li>
-</ul>
+        <div class="skill">Data Analytics</div>
+        <div class="skill">Business Analysis</div>
+        <div class="skill">HR Analytics</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">Microsoft Word</div>
+        <div class="skill">Microsoft PowerPoint</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Basic Python</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Project Management</div>
+        <div class="skill">Strategic Planning</div>
+        <div class="skill">Presentation Skills</div>
+        <div class="skill">Teamwork</div>
+        <div class="skill">Adaptability</div>
 
-</div>
+    </div>
 
 </section>
 
-<section>
+<section id="projects">
 
-<h2 class="section-title">Contact</h2>
+    <h2 class="section-title">Academic Projects</h2>
 
-<div class="card">
+    <div class="projects">
 
-<p><strong>Email:</strong> ftpgdm25050.srinithi.m@rsb.edu.in</p>
+        <div class="project">
+            <h3>Automatic Wall Painting Robot</h3>
+            <p>
+                Developed a remote-controlled robotic system designed to
+                perform automated wall painting with uniform coverage and
+                minimal human intervention.
+            </p>
+        </div>
 
-<p><strong>Phone:</strong> +91 8838397429</p>
+        <div class="project">
+            <h3>Automatic Opening Garage Door System</h3>
+            <p>
+                Designed an IoT-based garage door system that enables
+                hands-free and sensor-based automatic operation.
+            </p>
+        </div>
 
-<p><strong>LinkedIn:</strong>
-<a href="https://www.linkedin.com/in/srinithi-m-85393b251" target="_blank">
-linkedin.com/in/srinithi-m-85393b251
-</a>
-</p>
+        <div class="project">
+            <h3>ECOGUARD – Smart Detector for Harmful Chemicals</h3>
+            <p>
+                Developed an IoT-based detection system capable of identifying
+                harmful chemicals in beverages and vegetables while providing
+                real-time alerts.
+            </p>
+        </div>
 
-</div>
+    </div>
+
+</section>
+
+<section id="certifications">
+
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="card">
+
+        <h3>Analytics & Business</h3>
+        <ul>
+            <li>Data Analytics Essentials</li>
+            <li>Introduction to Business Analysis Using Spreadsheets: Basics</li>
+            <li>Design Thinking</li>
+        </ul>
+
+        <br>
+
+        <h3>Technology</h3>
+        <ul>
+            <li>Google Cloud Career Readiness – Associate Cloud Engineer Track</li>
+            <li>Salesforce Administrator Virtual Internship</li>
+            <li>Internet of Things</li>
+        </ul>
+
+        <br>
+
+        <h3>Professional Development</h3>
+        <ul>
+            <li>Introduction on Intellectual Property to Engineers and Technologists (NPTEL)</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card contact">
+
+        <p><strong>Email:</strong> ftpgdm25050.srinithi.m@rsb.edu.in</p>
+
+        <p><strong>Phone:</strong> +91 8838397429</p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/srinithi-m-85393b251" target="_blank">
+                linkedin.com/in/srinithi-m-85393b251
+            </a>
+        </p>
+
+    </div>
 
 </section>
 
 <footer>
-© 2026 Srinithi M | Portfolio
+    © 2026 Srinithi M | Portfolio
 </footer>
 
 </body>
