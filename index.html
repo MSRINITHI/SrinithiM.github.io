@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +10,12 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:Arial, sans-serif;
 }
 
 body{
     background:#0f172a;
-    color:white;
+    color:#ffffff;
     line-height:1.6;
 }
 
@@ -36,70 +35,48 @@ header h1{
 
 header h2{
     color:#38bdf8;
-    margin-top:10px;
+    margin:15px 0;
 }
 
 header p{
-    max-width:700px;
-    margin-top:20px;
+    max-width:800px;
     color:#cbd5e1;
 }
 
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 25px;
-    background:#38bdf8;
-    color:#000;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
 section{
-    padding:80px 10%;
+    padding:60px 10%;
 }
 
 .section-title{
-    font-size:2rem;
-    margin-bottom:30px;
     color:#38bdf8;
-}
-
-.about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+    margin-bottom:20px;
+    font-size:2rem;
 }
 
 .card{
     background:#1e293b;
     padding:25px;
-    border-radius:15px;
+    border-radius:12px;
+    margin-bottom:20px;
 }
 
 .skills{
     display:flex;
     flex-wrap:wrap;
-    gap:12px;
+    gap:10px;
 }
 
 .skill{
     background:#334155;
-    padding:10px 18px;
-    border-radius:25px;
-}
-
-.projects{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
+    padding:10px 15px;
+    border-radius:20px;
 }
 
 .project{
     background:#1e293b;
     padding:20px;
-    border-radius:15px;
+    border-radius:12px;
+    margin-bottom:20px;
 }
 
 .project h3{
@@ -107,188 +84,184 @@ section{
     margin-bottom:10px;
 }
 
-.contact{
-    text-align:center;
+ul{
+    padding-left:20px;
 }
 
 footer{
     text-align:center;
     padding:20px;
     background:#020617;
+    margin-top:30px;
 }
 
-@media(max-width:768px){
-    .about{
-        grid-template-columns:1fr;
-    }
-
-    header h1{
-        font-size:2.5rem;
-    }
+a{
+    color:#38bdf8;
+    text-decoration:none;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-    <h1>Srinithi M</h1>
 
-    <h2>HR Analytics | Business Analytics | AI Enthusiast</h2>
+<h1>SRINITHI M</h1>
 
-    <p>
-        Aspiring analytics professional passionate about transforming
-        workforce and business data into actionable insights through
-        analytics, technology, and AI-driven solutions.
-    </p>
+<h2>Aspiring Analytics Professional</h2>
 
-    <a href="#projects" class="btn">View Projects</a>
+<p>
+Motivated and responsible PGDM student with a strong interest in Analytics, Business Intelligence, and Data-Driven Decision Making. Seeking opportunities to apply analytical thinking, gain practical exposure, and contribute to organizational growth through data-driven insights and problem-solving.
+</p>
+
 </header>
 
-<section id="about">
+<section>
 
-    <h2 class="section-title">About Me</h2>
+<h2 class="section-title">About Me</h2>
 
-    <div class="about">
+<div class="card">
 
-        <div class="card">
-            <p>
-                I am currently pursuing a PGDM at Rajalakshmi School of Business
-                with a strong interest in HR Analytics, Business Analytics,
-                Data Visualization, and AI.
-            </p>
+<p>
+I am currently pursuing a Post Graduate Diploma in Management at Rajalakshmi School of Business. I have a keen interest in Analytics, Business Intelligence, and Data Analysis. I am passionate about learning industry practices, enhancing analytical capabilities, and leveraging data to support effective business decision-making.
+</p>
 
-            <br>
-
-            <p>
-                My experience includes competency framework development,
-                role mapping, business analysis, workforce analytics,
-                and AI-based productivity solutions.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Education</h3>
-
-            <br>
-
-            <p><strong>PGDM</strong><br>
-            Rajalakshmi School of Business<br>
-            CGPA: 7.0 / 9</p>
-
-            <br>
-
-            <p><strong>B.E EEE</strong><br>
-            K. Ramakrishnan College of Engineering<br>
-            CGPA: 7.79 / 10</p>
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 <section>
 
-    <h2 class="section-title">Skills</h2>
+<h2 class="section-title">Education</h2>
 
-    <div class="skills">
+<div class="card">
+<h3>Post Graduate Diploma in Management</h3>
+<p>Rajalakshmi School of Business</p>
+<p>CGPA: 7.0 / 9</p>
+<p>2025 – 2027</p>
+</div>
 
-        <div class="skill">HR Analytics</div>
-        <div class="skill">Business Analysis</div>
-        <div class="skill">Excel</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">AI Tools</div>
-        <div class="skill">Competency Mapping</div>
-        <div class="skill">Role Mapping</div>
-        <div class="skill">Data Visualization</div>
-        <div class="skill">Python</div>
+<div class="card">
+<h3>B.E Electrical and Electronics Engineering</h3>
+<p>K. Ramakrishnan College of Engineering</p>
+<p>CGPA: 7.79 / 10</p>
+<p>2021 – 2025</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>Higher Secondary</h3>
+<p>SRV Matric Higher Secondary School</p>
+<p>86.76%</p>
+</div>
 
-</section>
-
-<section id="projects">
-
-    <h2 class="section-title">Featured Projects</h2>
-
-    <div class="projects">
-
-        <div class="project">
-            <h3>HR Analytics Dashboard</h3>
-            <p>
-                Built workforce dashboards tracking headcount,
-                attrition, recruitment metrics, and HR KPIs.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Competency Framework Development</h3>
-            <p>
-                Worked on competency mapping, role tagging,
-                proficiency levels, and framework enhancement.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>FWT Increment Analysis</h3>
-            <p>
-                Conducted business analysis on compensation
-                benchmarking and increment recommendations.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>AI Knowledge Management Agent</h3>
-            <p>
-                Designed an AI agent concept for organizing
-                screenshots, notes, ideas, and reference materials.
-            </p>
-        </div>
-
-    </div>
+<div class="card">
+<h3>Senior Secondary</h3>
+<p>Laurel Higher Secondary School</p>
+<p>86%</p>
+</div>
 
 </section>
 
 <section>
 
-    <h2 class="section-title">Certifications</h2>
+<h2 class="section-title">Skills</h2>
 
-    <div class="card">
+<div class="skills">
 
-        <ul>
-            <li>Google Cloud Career Readiness Program</li>
-            <li>Salesforce Administrator Virtual Internship</li>
-            <li>NPTEL - Intellectual Property for Engineers</li>
-            <li>Internet of Things</li>
-        </ul>
+<div class="skill">Business Analysis</div>
+<div class="skill">Analytics</div>
+<div class="skill">Microsoft Excel</div>
+<div class="skill">Microsoft Word</div>
+<div class="skill">Microsoft PowerPoint</div>
+<div class="skill">Basic Python</div>
+<div class="skill">Project Management</div>
+<div class="skill">Strategic Planning</div>
+<div class="skill">Presentation Skills</div>
+<div class="skill">Teamwork</div>
+<div class="skill">Adaptability</div>
+<div class="skill">Internet of Things</div>
 
-    </div>
+</div>
 
 </section>
 
 <section>
 
-    <h2 class="section-title">Contact</h2>
+<h2 class="section-title">Academic Projects</h2>
 
-    <div class="contact">
+<div class="project">
 
-        <p>Email: ftpgdm25050.srinithi.m@rsb.edu.in</p>
+<h3>Automatic Wall Painting Robot</h3>
 
-        <p>Phone: +91 8838397429</p>
+<p>
+Developed a remote-controlled robotic system designed to perform automated wall painting with uniform coverage and minimal human intervention.
+</p>
 
-        <p>LinkedIn:
-        linkedin.com/in/srinithi-m-85393b251
-        </p>
+</div>
 
-    </div>
+<div class="project">
+
+<h3>Automatic Opening Garage Door System</h3>
+
+<p>
+Designed an IoT-based garage door system that enables hands-free and sensor-based automatic operation.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>ECOGUARD – Smart Detector for Harmful Chemicals in Beverages and Vegetables</h3>
+
+<p>
+Developed an IoT-based detection system capable of identifying harmful chemicals in food items and providing real-time alerts.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="card">
+
+<ul>
+<li>Google Cloud Career Readiness – Associate Cloud Engineer Track</li>
+<li>Salesforce Administrator Virtual Internship</li>
+<li>Introduction on Intellectual Property to Engineers and Technologists (NPTEL)</li>
+<li>Internet of Things</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Email:</strong> ftpgdm25050.srinithi.m@rsb.edu.in</p>
+
+<p><strong>Phone:</strong> +91 8838397429</p>
+
+<p><strong>LinkedIn:</strong>
+<a href="https://www.linkedin.com/in/srinithi-m-85393b251" target="_blank">
+linkedin.com/in/srinithi-m-85393b251
+</a>
+</p>
+
+</div>
 
 </section>
 
 <footer>
-    © 2026 Srinithi M | Portfolio
+© 2026 Srinithi M | Portfolio
 </footer>
 
 </body>
 </html>
-```
