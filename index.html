@@ -1,0 +1,294 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srinithi M | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:4rem;
+}
+
+header h2{
+    color:#38bdf8;
+    margin-top:10px;
+}
+
+header p{
+    max-width:700px;
+    margin-top:20px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:30px;
+    color:#38bdf8;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.skill{
+    background:#334155;
+    padding:10px 18px;
+    border-radius:25px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+@media(max-width:768px){
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    header h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Srinithi M</h1>
+
+    <h2>HR Analytics | Business Analytics | AI Enthusiast</h2>
+
+    <p>
+        Aspiring analytics professional passionate about transforming
+        workforce and business data into actionable insights through
+        analytics, technology, and AI-driven solutions.
+    </p>
+
+    <a href="#projects" class="btn">View Projects</a>
+</header>
+
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+        <div class="card">
+            <p>
+                I am currently pursuing a PGDM at Rajalakshmi School of Business
+                with a strong interest in HR Analytics, Business Analytics,
+                Data Visualization, and AI.
+            </p>
+
+            <br>
+
+            <p>
+                My experience includes competency framework development,
+                role mapping, business analysis, workforce analytics,
+                and AI-based productivity solutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Education</h3>
+
+            <br>
+
+            <p><strong>PGDM</strong><br>
+            Rajalakshmi School of Business<br>
+            CGPA: 7.0 / 9</p>
+
+            <br>
+
+            <p><strong>B.E EEE</strong><br>
+            K. Ramakrishnan College of Engineering<br>
+            CGPA: 7.79 / 10</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+
+        <div class="skill">HR Analytics</div>
+        <div class="skill">Business Analysis</div>
+        <div class="skill">Excel</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">AI Tools</div>
+        <div class="skill">Competency Mapping</div>
+        <div class="skill">Role Mapping</div>
+        <div class="skill">Data Visualization</div>
+        <div class="skill">Python</div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>HR Analytics Dashboard</h3>
+            <p>
+                Built workforce dashboards tracking headcount,
+                attrition, recruitment metrics, and HR KPIs.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Competency Framework Development</h3>
+            <p>
+                Worked on competency mapping, role tagging,
+                proficiency levels, and framework enhancement.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>FWT Increment Analysis</h3>
+            <p>
+                Conducted business analysis on compensation
+                benchmarking and increment recommendations.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>AI Knowledge Management Agent</h3>
+            <p>
+                Designed an AI agent concept for organizing
+                screenshots, notes, ideas, and reference materials.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="card">
+
+        <ul>
+            <li>Google Cloud Career Readiness Program</li>
+            <li>Salesforce Administrator Virtual Internship</li>
+            <li>NPTEL - Intellectual Property for Engineers</li>
+            <li>Internet of Things</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact">
+
+        <p>Email: ftpgdm25050.srinithi.m@rsb.edu.in</p>
+
+        <p>Phone: +91 8838397429</p>
+
+        <p>LinkedIn:
+        linkedin.com/in/srinithi-m-85393b251
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Srinithi M | Portfolio
+</footer>
+
+</body>
+</html>
+```
